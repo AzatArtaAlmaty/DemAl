@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <link rel="stylesheet" href="assets/css/style.css">-->
+   
+   {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'TimeTable/css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Cousine&display=swap" rel="stylesheet">
+    <title>DemAL</title>
+    <link rel="stylesheet" href="{% static 'TimeTable/css/style.css' %}">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">DemAL</div>
+
+            <nav class="nav">
+                <a class="nav__link" href="#">EVENTS</a>
+                <a class="nav__link" href="#">ABOUT US</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--intro-->
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            
+            <h1 class="intro__title">Welcome to Almaty</h1>
+
+        </div>
+    </div>
+</div>
+    
+    
+<!--    find your event-->
+    <section>
+        <div class="find_your_event">
+            
+        </div>
+    </section>
+    
+<!--events-->
+<section class="events">
+    <div>
+        <h2 class="events__title">
+            EVENTS
+        </h2>
+        <div class= "events__cards">
+            <div class= "events__card">
+                <div align="center" class="events_pic"> 
+                    <img src="{% static 'TimeTable/images/Rectangle%208.png' %}">
+                </div>
+                <p class="events_desc">
+                    MyaGi & Andy Panda 
+					<img src="{% static 'TimeTable/logos/place.svg' %}">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="{% static 'TimeTable/assets/logos/date.svg' %}">
+					27 NOVEMBER, 21:00 <br>
+					<button align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+            <div align="center" class= "events__card">
+                <div  class="events_pic"> 
+                    <img src="{% static 'TimeTable/images/Rectangle%208.png' %}">
+                </div>
+                <p class="events_desc">
+					MyaGi & Andy Panda <br>
+					<img src="{% static 'TimeTable/logos/place.svg' %}">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="{% static 'TimeTable/logos/date.svg' %}">
+					27 NOVEMBER, 21:00
+					<button align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+            <div class= "events__card">
+                <div align="center" class="events_pic" > 
+                    <img src="{% static 'TimeTable/images/Rectangle%208.png' %}">
+                </div>
+                <p class="events_desc">
+					MyaGi & Andy Panda <br>
+					<img src="{% static 'TimeTable/logos/place.svg' %}">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="{% static 'TimeTable/logos/date.svg' %}">
+					27 NOVEMBER, 21:00
+					<button align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+			 <div class= "events__card">
+                <div align="center" class="events_pic"> 
+                    <img src="{% static 'TimeTable/images/Rectangle%208.png' %}">
+                </div>
+                <p class="events_desc">
+					MyaGi & Andy Panda <br>
+					<img src="{% static 'TimeTable/logos/place.svg' %}">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="{% static 'TimeTable/logos/date.svg' %}">
+					27 NOVEMBER, 21:00
+					<button align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+</section>
+    
+<!--autro-->
+<section>
+   <div class="autro">
+    <div class="container">
+        <div class="autro__inner">
+            
+            <h1 align="center" class="autro__title">ABOUT US</h1>
+            <p>ABOUT US Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac mauris morbi sollicitudin tempor sed feugiat sed sit feugiat. Nulla turpis nulla sed nulla ac neque. Auctor cum lectus facilisis convallis sagittis enim amet in eleifend. Eu neque, mauris eget mi. </p>
+
+        </div>
+    </div>
+</div>
+</section>
+    
+    
+<!--    footer -->
+<footer class="foot">
+  <div class="container-fluid">
+    <div class="">
+      <div class="row py-3">
+        <div class="col-md-4">
+          <p class="text-white1">Copyright © 2019 DemAl Kazakhstan.<br><br><br>
+              All rights reserved.</p>
+        </div>
+          <div class="row col-md-4 justify-content-center align-items-centeralign-items-center">
+              <p class="autro__logo">DemAl</p>
+          </div>
+        <div class="row col-md-4 justify-content-end">
+          <div class="d-inline-block">
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://www.facebook.com/" class="text-white"><img src="{% static 'TimeTable/logos/facebook.svg' %}"><i class="fa fa-2x fa-fw fa-facebook"></i>
+		</a>
+              </div>s
+
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://instagram.com/" class="text-white"><img src="{% static 'TimeTable/logos/insta.svg' %}">
+                <i class="fa fa-2x fa-fw fa-twitter"></i></a>
+            </div>
+
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://www.telegram.com/" class="text-white"><img src="{ static 'TimeTable/logos/telegram.svg' %}">
+                <i class="fa fa-2x fa-fw fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="{% static 'TimeTable/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'TimeTable/js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
