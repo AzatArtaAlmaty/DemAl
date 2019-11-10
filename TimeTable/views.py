@@ -24,5 +24,11 @@ def index(request):
 class EventView(APIView):
 	def get(self, request):
 		event = Event.objects.all()
-		serializer = EventSerializer(event, many=True)
+		serializer = EventAllSerializer(event, many=True)
+		return Response(serializer.data)
+
+class OrderView(APIView):
+	def get(self, request):
+		order = Order.objects.all()
+		serializer = OrderSerializer(order, many=True)
 		return Response(serializer.data)
