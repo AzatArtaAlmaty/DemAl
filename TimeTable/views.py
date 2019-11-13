@@ -11,7 +11,6 @@ def index(request):
 	list_of_events = Event.objects.all()
 	context = {'list_of_events': list_of_events}
 	return render(request, 'TimeTable/index.html', context)
-
 # def detail(request, event_id):
 # 	event = get_object_or_404(Event, pk=event_id)
 # 	event_serialized = model_to_dict(event)
