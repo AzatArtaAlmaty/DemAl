@@ -29,6 +29,3 @@ class Order(models.Model):
 	price = models.IntegerField()
 	def __str__(self):
 		return 'id: {} name: {}'.format(self.id, self.order_user)
-
-
-        

@@ -2,65 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="assets/css/style.css">-->
-   
-    
     <link href="https://fonts.googleapis.com/css?family=Chivo|Courgette|Cousine&display=swap" rel="stylesheet">
     <title>DemAL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/eventListstyle.css">
     
 </head>
+    
 <body>
-
-
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__logo">DemAL</div>
-
-            <nav class="nav">
-                <a class="nav__link" href="#">EVENTS</a>
-                <a class="nav__link" href="#">ABOUT US</a>
-                <a class="nav__link" href="#"> <img src="assets/logos/Signin.svg"></a>
-            </nav>
+    
+    <header class="head">
+         <div class="container-fluid">
+             <div class="container">
+                <div class="header__inner">
+                    <div class="">
+                        <div class="row py-3">
+                            <p class="intro_logo">DemAl</p>
+                            <nav class="nav">
+                            <a class="nav__link" href="#">EVENTS</a>
+                            <a class="nav__link" href="#">ABOUT US</a>
+                            <a class="nav__link" href="#"> <img src="assets/logos/SigninWhite.svg"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
+    
+   
+    
+    <div class= "searching">
+       <div class="block">
+        <button>CHOOSE CATEGORY</button> 
+		<button>CHOOSE DATE</button>
+		<button style="margin-left: 3%">SEARCH</button>
+		</div>
+    </div> 
+	<div >
+		<img src="assets/images/Rectangle%2039.png" width="100%">
     </div>
-</header>
-
-<!--intro-->
-<div class="intro">
-    <div class="container">
-        <div class="intro__inner">
-            
-            <h2 align="center" class="intro__title">HELLO TRAVELER </h2>
-            <p align="center" class="intro_decs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac mauris morbi sollicitudin tempor sed feugiat sed sit feugiat. Nulla turpis nulla sed nulla ac neque. Auctor cum lectus facilisis convallis sagittis enim amet in eleifend. Eu neque, mauris eget mi.</p>
-
-        </div>
-    </div>
-</div>
-    
-    
-<!--    find your event-->
-    <section>
-        <div class="find_your_event">
-            <h2>FIND YOUR EVENT</h2>
-            <!-- Example single danger button -->
-            <button>CHOOSE CATEGORY</button>
-            <br>
-            <button style="margin-top:34%;">CHOOSE DATE</button>
-            <button style="margin-top:38%; margin-left: 22.5%; width: 12%;">SEARCH</button>
-        </div>
-    </section>
-    
-<!--events-->
-<section class="events">
-    <div>
-        <h2 class="events__title">
-           POPULAR EVENTS
-        </h2>
-        <div class= "events__cards">
+            <div class= "events__cards">
             <div class= "events__card">
                 <div align="center" class="events_pic"> 
                     <img src="assets/images/Rectangle%208.png">
@@ -71,7 +54,7 @@
 					Sports and cultural complex Baluan SHolak <br>
 					<img src="assets/logos/date.svg">
 					27 NOVEMBER, 21:00 <br>
-					<button align="right" >SEE MORE</button>
+					<button class="seemore" align="right" >SEE MORE</button>
                 </p>
                 
             </div>
@@ -99,7 +82,7 @@
 					Sports and cultural complex Baluan SHolak <br>
 					<img src="assets/logos/date.svg">
 					27 NOVEMBER, 21:00
-					<button align="right" >SEE MORE</button>
+					<button class="seemore" align="right" >SEE MORE</button>
                 </p>
                 
             </div>
@@ -113,32 +96,42 @@
 					Sports and cultural complex Baluan SHolak <br>
 					<img src="assets/logos/date.svg">
 					27 NOVEMBER, 21:00
-					<button align="right" >SEE MORE</button>
+					<button class="seemore" align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+                <div class= "events__card">
+                <div align="center" class="events_pic"> 
+                    <img src="assets/images/Rectangle%208.png">
+                </div>
+                <p class="events_desc">
+					MyaGi & Andy Panda <br>
+					<img src="assets/logos/place.svg">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="assets/logos/date.svg">
+					27 NOVEMBER, 21:00
+					<button class="seemore" align="right" >SEE MORE</button>
+                </p>
+                
+            </div>
+                <div class= "events__card">
+                <div align="center" class="events_pic"> 
+                    <img src="assets/images/Rectangle%208.png">
+                </div>
+                <p class="events_desc">
+					MyaGi & Andy Panda <br>
+					<img src="assets/logos/place.svg">
+					Sports and cultural complex Baluan SHolak <br>
+					<img src="assets/logos/date.svg">
+					27 NOVEMBER, 21:00
+					<button class="seemore" align="right" >SEE MORE</button>
                 </p>
                 
             </div>
         </div>
-    </div>
     
-</section>
-    
-<!--autro-->
-<section>
-   <div class="autro">
-    <div class="container">
-        <div class="autro__inner">
-            
-            <h1 align="center" class="autro__title">ABOUT US</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac mauris morbi sollicitudin tempor sed feugiat sed sit feugiat. Nulla turpis nulla sed nulla ac neque. Auctor cum lectus facilisis convallis sagittis enim amet in eleifend. Eu neque, mauris eget mi. </p>
 
-        </div>
-    </div>
-</div>
-</section>
-    
-    
-<!--    footer -->
-<footer class="foot">
+	<footer class="foot">
   <div class="container-fluid">
     <div class="">
       <div class="row py-3">
@@ -171,8 +164,8 @@
     </div>
   </div>
 </footer>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-</body>
 </html>

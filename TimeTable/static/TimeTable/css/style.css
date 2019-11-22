@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Cousine', monospace;
+    font-family: 'Chivo', sans-serif;
 	background-color:  #E0E0E0;
     font-size: 15px;
     line-height: 1.6;
@@ -52,10 +52,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__title {
     color: black;
-    font-size: 150px;
+    font-size: 70px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
+}
+
+.intro_decs{
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1;
+
 }
 
 .intro__title:after {
@@ -135,6 +144,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:hover {
     opacity: .75;
+	color:gray;
+	text-decoration: none;
 }
 
 .nav__link:hover:after,
@@ -148,9 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .find_your_event{
     position: relative;
-    display: flex;
+     display: flex;
     flex-direction: column;
-    width: 100%;
+ width: 100%;
     height: 920px;
         background: url("../images/Rectangle%2013.png") center no-repeat;
            
@@ -160,6 +171,23 @@ h1, h2, h3, h4, h5, h6 {
     top: 800px;
 }
 
+.find_your_event h2{
+    position: absolute;
+    margin-top:25%;
+    margin-left: 20%;
+    z-index: 3;
+}
+
+.find_your_event button{
+    width: 15%;
+    position: absolute;
+    margin-top:30%;
+    margin-left: 21%;
+    z-index: 3;
+}
+
+
+
 .events {
     position: relative;
     margin-top: 70%;
@@ -167,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .events__title{
     margin-top: 100px;
+    margin-bottom: 25px;
     text-align: center;
     font-size: 36px;
 }
@@ -194,15 +223,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .events_desc{
-    font-family:  Cousine;
+    font-family:  Chivo;
     font-size: 18px;
     text-align: left;
 	margin-left: 10px;
 }
 
 button {
-	/*margin-top:10px;
-	margin-left: 100px;*/
+	margin-top:10px;
+	margin-left: 100px;
 	font-weight: bold;
     border: 2px solid #000; /* Параметры рамки */
     background: #fff; /* Цвет фона */
@@ -216,7 +245,7 @@ button {
 /*    justify-content: center;*/
     width: 100%;
     height: 920px;
-    background: url("../images/Group%203.png") center no-repeat;
+        background: url("../images/Group%203.png") center no-repeat;
            
     -webkit-background-size: cover;
     background-size: cover;
@@ -232,9 +261,20 @@ button {
     
 }
 
+.autro__inner p {
+    font-size: 1em;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+
 .autro__title{
     
-/*    margin-top: 25%;*/
+    margin-top: 20% ;
+    margin-bottom: 50px;
 }
 .text-white1{
     font-family: Courier New;
@@ -247,8 +287,8 @@ button {
     
 }
 .autro__logo{
-    font-family:'Courgette', cursive;  
-    font-size: 30px;
+        font-family:'Courgette', cursive;  
+        font-size: 30px;
     font-weight: 700;
     font-style:'Courgette', cursive; 
     color: white;
@@ -256,48 +296,4 @@ button {
 
 .foot{
     background-color: #333333;
-}
-
-.btn-secondary, .btn-secondary:hover {
-    width: 210%;
-    color: black;
-    background-color: transparent;
-    border-color: transparent;
-}
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-    /*width: 50%;*/
-    color: black;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.dropdown-menu {
-    min-width: 16.7rem;
-}
-
-/*.dropdown-toggle::after {
-    display:none;
-}*/
-
-.dropdown-divider {
-    height: 0;
-    margin: 0.5rem 0;
-    overflow: hidden;
-    border-top: 1px solid black;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0.5);
-}
-
-.btn-secondary:focus, .btn-secondary.focus {
-    box-shadow: 0 0 0 0.0rem rgba(130, 138, 145, 0.5);
-}
-
-.fa{
-    float: right;
-}
-
-.btn {
-    text-align: left;
 }
