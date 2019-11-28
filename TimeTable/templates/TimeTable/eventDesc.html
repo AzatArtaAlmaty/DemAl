@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
     <link href="https://fonts.googleapis.com/css?family=Chivo|Courgette|Cousine&display=swap" rel="stylesheet">
     <title>DemAL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/eventDecsstyle.css">
+    <link rel="stylesheet" href="{% static 'TimeTable/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'TimeTable/css/eventDecsstyle.css' %}"
     
 </head>
     
@@ -22,7 +23,7 @@
                             <nav class="nav">
                             <a class="nav__link" href="#">EVENTS</a>
                             <a class="nav__link" href="#">ABOUT US</a>
-                            <a class="nav__link" href="#"> <img src="assets/logos/SigninWhite.svg"></a>
+                            <a class="nav__link" href="#"> <img src="{% static 'TimeTable/logos/SigninWhite.svg' %}"></a>
                             </nav>
                         </div>
                     </div>
@@ -31,32 +32,43 @@
         </div>
     </header>
    
-   <div>
-		<img src="assets/images/Rectangle%2033.png" width="100%">
-    </div>
-    <div align="center" class="backgroundTitle">
+   <div class="bg">
+       <div class="container hei">
+            <div class="row hei">
+                <div class="wei d-flex align-content-center justify-content-center flex-wrap">
+                    <div class="backgroundTitle">
+                        <div class="d-flex">
+                          <div class="line1"></div>
+                            <img src="/media/{{event.img}}" class="ml-5 mt-5" style="width: 200px;height:250px;">
+                            <div class="ml-5 mt-5 flex-column" style="width: 60%;">
+                                <h1>{{ event.events_name }}</h1>
+                                <h2 class="mt-3">{{event.date|date:"M d, Y"}}</h2>
+                                <h6 class="mt-3">{{ event.info }}</h6>
+                                <a href="" class="btn btn-primary mt-3">BUY TICKET</a>
+                            </div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+       <div class="container">
+    <div class="backgroundTitle row">
 		<div class="line1">
 		</div>
 		<div class="line2">
-		</div>
-		<img src="assets/images/Rectangle%208.png">
-		<div class="backgroundTitle_text">
-			<h1>MyaGi & Andy Panda</h1>
-			<h3>27 NOVEMBER, 21:00</h3>
-			<h4>Lorem ipsum dolor sit amet, 
-			consectetur adipiscing elit.  <br>
-			Mi sed felis vel duis. 
-			Velit felis quam enim,  
-			nulla adipiscing amet tortor.
-			Interdum faucibus dui amet, orci fusce sit nullam consequat id. <br>
-			Dolor suscipit nulla feugiat lorem proin sed neque tristique nunc. 
-			Diam sollicitudin cras nunc lectus vitae id hendrerit in. <br>
-			Amet, lacus leo nunc quisque vel. In sociis in mi, et dolor.  
-			Donec feugiat eget nascetur nibh hendrerit felis.  
-			Sed lectus morbi tortor at facilisis.</h4>
-			<button>BUY TICKET</button>
-		</div>
+  		</div>
+        <div class="row">
+            <img src="assets/images/Rectangle%208.png" class="d-flex justify-content-start ml-5 mt-5">
+            <div class="d-flex justify-content-end ml-5 mt-5">
+                <h1>MyaGi & Andy Panda</h1>
+            </div>
+        </div>
     </div>
+           </div>
+-->
+  </div>
 	
 	
 	<footer class="foot">
@@ -73,17 +85,17 @@
         <div class="row col-md-4 justify-content-end">
           <div class="d-inline-block">
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://www.facebook.com/" class="text-white"><img src="assets/logos/facebook.svg"><i class="fa fa-2x fa-fw fa-facebook"></i>
+              <a href="https://www.facebook.com/" class="text-white"><img src="{% static 'TimeTable/logos/facebook.svg' %}"><i class="fa fa-2x fa-fw fa-facebook"></i>
 		</a>
               </div>
 
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://instagram.com/" class="text-white"><img src="assets/logos/insta.svg">
+              <a href="https://instagram.com/" class="text-white"><img src="{% static 'TimeTable/logos/insta.svg' %}">
                 <i class="fa fa-2x fa-fw fa-twitter"></i></a>
             </div>
 
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://www.telegram.com/" class="text-white"><img src="assets/logos/telegram.svg">
+              <a href="https://www.telegram.com/" class="text-white"><img src="{% static 'TimeTable/logos/telegram.svg' %}">
                 <i class="fa fa-2x fa-fw fa-linkedin"></i></a>
             </div>
           </div>
@@ -95,5 +107,5 @@
 	</body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{% static 'TimeTable/js/bootstrap.min.js' %}"></script>
 </html>

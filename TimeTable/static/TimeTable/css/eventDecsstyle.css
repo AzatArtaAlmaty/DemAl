@@ -13,10 +13,26 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h3, h4, h5, p {
+
+    color: #FFFFFF;
     margin: 0;
     color: black;
 }
+
+h1, h2 {
+    color: white;
+}
+h6 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
 
 
 /* Container */
@@ -100,13 +116,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .backgroundTitle{
-	position:absolute;
-    width: 80%;
-    height: 95%;
-    left: 10%;
-    top: 20%;
+    width: 100%;
+    height: 60%;
     background: #333333;
-	z-index:100;
 }
 
 .backgroundTitle_text h1, .backgroundTitle_text h3,
@@ -121,26 +133,33 @@ h1, h2, h3, h4, h5, h6, p {
 	 text-align:left;
 }
 
-.backgroundTitle_text{
-	margin-top:5%;
+.hei{
+    height: 100%;
 }
 
+.wei{
+    width: 100%;
+}
+
+/*
 .backgroundTitle img{
-	position:absolute;
     width: 23%;
     height: 45%;
-    left: 7%;
-    top: 10%;
     background: #333333;
-	z-index:100;
+}
+*/
+
+.bg{
+    min-width: 100%; 
+    height: 1000px;
+    background: url("../images/Rectangle%2033.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .backgroundTitle button{
-	position: absolute;
 	width: 150px;
 	height: 35px;
-	left: 330px;
-	top: 453px;
 
 	background: #FFC700;
 	box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -150,8 +169,8 @@ h1, h2, h3, h4, h5, h6, p {
 	position: absolute;
 	width: 200px;
 	height: 170px;
-	right: 2%;
-	bottom: 6%;
+	right: 11%;
+    bottom: -10%;
 	border-bottom: 2px solid #FFC700;
 	border-left: 2px solid #FFC700;
 	box-sizing: border-box;
@@ -162,8 +181,8 @@ h1, h2, h3, h4, h5, h6, p {
 	position: absolute;
 	width: 200px;
 	height: 170px;
-	left: 2%;
-	top: 6%;
+	left: 11%;
+	top: 42%;
 	border-top: 2px solid #FFC700;
 	border-right: 2px solid #FFC700;
 	box-sizing: border-box;
@@ -216,8 +235,17 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #333333;
 }
 
+.btn {
+    background: #FFC700;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
-
+.btn-primary:hover {
+    color: black;
+    background: #FFC700;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-color: #0062cc;
+}
 button {
 	margin-top:10px;
 	margin-left: 100px;
@@ -227,5 +255,3 @@ button {
     font-size: 14px; /* Размер текста */
     padding: 5px 20px; /* Поля вокруг текста */
    }
-
-

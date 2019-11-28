@@ -98,34 +98,8 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: .75;
 }
 
-.searching{
-    width: 85%;
-    background-color: #333333;
-    margin: 0 auto;
-    z-index:100;
-}
-.block{
-	position:absolute;
-	top:82%;
-	height:20%;
-    width: 80%;
-    background-color: #333333;
-    transform:translateY(-20%);
-	z-index:11;
-}
 
-.block button{
-	width: 20%;
-	color: white;
-	margin-top:5.5%;
-	margin-left:4%;
-	font-weight: bold;
-	border-bottom: 2px solid white; 
-    background: #333;
-	font-size: 18px;
-    padding: 5px 20px;
-	
-}
+
 
 .events {
     position: absolute;
@@ -200,4 +174,14 @@ h1, h2, h3, h4, h5, h6, p {
     background: #fff; /* Цвет фона */
     font-size: 14px; /* Размер текста */
     padding: 5px 20px; /* Поля вокруг текста */
+}
+
+.btn-group{
+    position: relative;
+    width: 100%;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #333333;
+    border-color:#333333;
 }

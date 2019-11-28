@@ -175,69 +175,56 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-top:25%;
     margin-left: 20%;
-    z-index: 3;
+    z-index: ;
 }
 
+.dropdown2{
+    margin-top: -31%;
+}
 .find_your_event button{
     width: 15%;
-    position: absolute;
+    position: relative;
     margin-top:30%;
     margin-left: 21%;
     z-index: 3;
 }
 
+.card-deck{
+    margin-top: 5%;
+    width: 70%;
+    height: 50%;
+    position:relative;
+    margin-bottom: 10%;
+}
 
+button{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.btn btn-outline-dark{
+    position: relative;
+    
+}
 
 .events {
     position: relative;
     margin-top: 70%;
 }
 
+.card-text{
+    text-align: left;
+   
+}
 .events__title{
-    margin-top: 100px;
+    margin-top: 880px;
     margin-bottom: 25px;
     text-align: center;
     font-size: 36px;
 }
 
-.events__cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 40px;
-    padding: 0 200px;
-    margin-bottom: 203px;
-}
 
-.events__card{
-    grid-column:  span 1;
-	background-color: #fff;
-	width: 250px;
-    }
-.event_pic{
-    
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    margin-bottom: auto;
-	
-}
 
-.events_desc{
-    font-family:  Chivo;
-    font-size: 18px;
-    text-align: left;
-	margin-left: 10px;
-}
-
-button {
-	margin-top:10px;
-	margin-left: 100px;
-	font-weight: bold;
-    border: 2px solid #000; /* Параметры рамки */
-    background: #fff; /* Цвет фона */
-    font-size: 14px; /* Размер текста */
-    padding: 5px 20px; /* Поля вокруг текста */
-   }
 
 .autro{
     display: flex;
@@ -287,8 +274,8 @@ button {
     
 }
 .autro__logo{
-        font-family:'Courgette', cursive;  
-        font-size: 30px;
+    font-family:'Courgette', cursive;  
+    font-size: 30px;
     font-weight: 700;
     font-style:'Courgette', cursive; 
     color: white;

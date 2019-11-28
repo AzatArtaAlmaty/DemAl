@@ -6,8 +6,9 @@ class Event(models.Model):
     events_name = models.CharField(max_length=200)
     tickets_count = models.IntegerField()
     info = models.TextField()
-    img = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    geolocation = models.CharField(max_length=200, default="")
+    img = models.ImageField(upload_to='img')
+    date = models.DateField('date published')
     category = models.ForeignKey('Category', on_delete=models.CASCADE, default=1)
     def __unicode__(self):
     	return self.category_name
@@ -16,6 +17,7 @@ class Event(models.Model):
 
 
 class Category(models.Model):
+    img = models.CharField(max_length=1000, null=True)
     category_name = models.CharField(max_length=200)
     def __unicode__(self):
     	return self.category_name

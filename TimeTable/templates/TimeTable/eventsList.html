@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load staticfiles %}
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Chivo|Courgette|Cousine&display=swap" rel="stylesheet">
     <title>DemAL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/eventListstyle.css">
+    <link rel="stylesheet" href="{% static 'TimeTable/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'TimeTable/css/eventListstyle.css' %}">
     
 </head>
     
@@ -22,7 +23,7 @@
                             <nav class="nav">
                             <a class="nav__link" href="#">EVENTS</a>
                             <a class="nav__link" href="#">ABOUT US</a>
-                            <a class="nav__link" href="#"> <img src="assets/logos/SigninWhite.svg"></a>
+                            <a class="nav__link" href="#"> <img src="{% static 'TimeTable/logos/SigninWhite.svg' %}"></a>
                             </nav>
                         </div>
                     </div>
@@ -41,97 +42,29 @@
 		</div>
     </div> 
 	<div >
-		<img src="assets/images/Rectangle%2039.png" width="100%">
+		<img src="{% static 'TimeTable/images/Rectangle%2039.png' %}" width="100%">
     </div>
-            <div class= "events__cards">
+            <div class= "events__cards" style="margin-top: 5%;">
+            {% for choice in list_of_events %}
             <div class= "events__card">
                 <div align="center" class="events_pic"> 
-                    <img src="assets/images/Rectangle%208.png">
+                    <img src="{% static '{{choice.img}}' %}">
                 </div>
                 <p class="events_desc">
-                    MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00 <br>
+                    {{choice.events_name}} <br>
+					<img src="{% static 'TimeTable/logos/place.svg' %}">
+					{{choice.geolocation}} <br>
+					<img src="{% static 'TimeTable/logos/date.svg' %}">
+					{{choice.date|date:"M d, Y"}} <br>
 					<button class="seemore" align="right" >SEE MORE</button>
                 </p>
                 
             </div>
-            <div align="center" class= "events__card">
-                <div  class="events_pic"> 
-                    <img src="assets/images/Rectangle%208.png">
-                </div>
-                <p class="events_desc">
-					MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00
-					<button align="right" >SEE MORE</button>
-                </p>
-                
-            </div>
-            <div class= "events__card">
-                <div align="center" class="events_pic" > 
-                    <img src="assets/images/Rectangle%208.png">
-                </div>
-                <p class="events_desc">
-					MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00
-					<button class="seemore" align="right" >SEE MORE</button>
-                </p>
-                
-            </div>
-			 <div class= "events__card">
-                <div align="center" class="events_pic"> 
-                    <img src="assets/images/Rectangle%208.png">
-                </div>
-                <p class="events_desc">
-					MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00
-					<button class="seemore" align="right" >SEE MORE</button>
-                </p>
-                
-            </div>
-                <div class= "events__card">
-                <div align="center" class="events_pic"> 
-                    <img src="assets/images/Rectangle%208.png">
-                </div>
-                <p class="events_desc">
-					MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00
-					<button class="seemore" align="right" >SEE MORE</button>
-                </p>
-                
-            </div>
-                <div class= "events__card">
-                <div align="center" class="events_pic"> 
-                    <img src="assets/images/Rectangle%208.png">
-                </div>
-                <p class="events_desc">
-					MyaGi & Andy Panda <br>
-					<img src="assets/logos/place.svg">
-					Sports and cultural complex Baluan SHolak <br>
-					<img src="assets/logos/date.svg">
-					27 NOVEMBER, 21:00
-					<button class="seemore" align="right" >SEE MORE</button>
-                </p>
-                
-            </div>
+            {% endfor %}
         </div>
     
 
-	<footer class="foot">
+<footer class="foot">
   <div class="container-fluid">
     <div class="">
       <div class="row py-3">
@@ -145,17 +78,17 @@
         <div class="row col-md-4 justify-content-end">
           <div class="d-inline-block">
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://www.facebook.com/" class="text-white"><img src="assets/logos/facebook.svg"><i class="fa fa-2x fa-fw fa-facebook"></i>
-		</a>
+              <a href="https://www.facebook.com/" class="text-white"><img src="{% static 'TimeTable/logos/facebook.svg' %}"><i class="fa fa-2x fa-fw fa-facebook"></i>
+        </a>
               </div>
 
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://instagram.com/" class="text-white"><img src="assets/logos/insta.svg">
+              <a href="https://instagram.com/" class="text-white"><img src="{% static 'TimeTable/logos/insta.svg' %}">
                 <i class="fa fa-2x fa-fw fa-twitter"></i></a>
             </div>
 
             <div class="bg-circle-outline d-inline-block">
-              <a href="https://www.telegram.com/" class="text-white"><img src="assets/logos/telegram.svg">
+              <a href="https://www.telegram.com/" class="text-white"><img src="{% static 'TimeTable/logos/telegram.svg' %}">
                 <i class="fa fa-2x fa-fw fa-linkedin"></i></a>
             </div>
           </div>
@@ -167,5 +100,5 @@
 	</body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{% static 'TimeTable/js/bootstrap.bundle.js' %}"></script>
 </html>

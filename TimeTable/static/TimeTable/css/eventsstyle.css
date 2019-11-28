@@ -177,3 +177,10 @@ button {
     font-size: 14px; /* Размер текста */
     padding: 5px 20px; /* Поля вокруг текста */
    }
+.card-deck{
+    margin-top: 70%;
+    width: 70%;
+    height: 50%;
+    position:relative;
+    margin-bottom: 10%;
+}
