@@ -34,8 +34,8 @@ def eventDesc(request, event_id):
 def authorization(request):
 	return render(request, 'TimeTable/authorization.html')
 
-def newindex(request):
-	return render(request, 'TimeTable/newindex.html')
+def payment(request):
+	return render(request, 'TimeTable/payment.html')
 # def detail(request, event_id):
 # 	event = get_object_or_404(Event, pk=event_id)
 # 	event_serialized = model_to_dict(event)

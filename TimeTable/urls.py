@@ -10,7 +10,7 @@ urlpatterns = [
     path('authorization', authorization, name='authorization'),
     path('test', EventView.as_view()),
     path('order', OrderView.as_view()),
-    path('xa', newindex, name='newindex'),
+    path('payment', payment, name='payment'),
     # path('<int:event_id>/', views.detail, name='detail'),
     # path('AllElements/', views.all_element, name='all_element'),
     # path('/<str:field_name>', views.all_element, name='all_element'),
