@@ -1,4 +1,3 @@
-//scrollspy in newindex #aboutUs
 $('[data-toggle="datepicker"]').datepicker(); //datepicker newindex 
 //dropdown
 let dropdown = $('#dropdownMenuButton');

@@ -140,11 +140,6 @@ hr {
     background: #333333;
 }
 
-.events {
-    position: absolute;
-    margin-top: 200%;
-}
-
 .events__title{
     margin-top: 100px;
     margin-bottom: 25px;
