@@ -17,14 +17,19 @@ def index(request):
 	context = {'list_of_events': list_of_events, 'list_of_category': list_of_category}
 	return render(request, 'TimeTable/newindex.html', context)
 
-def eventsList(request):
-	list_of_events = Event.objects.all()[:9]
-	context = {'list_of_events': list_of_events}
+def eventsList(request, category_id):
+	cat = Category.objects.get(pk=category_id)
+	category = Category.objects.all()
+	list_of_events = Event.objects.filter(category=cat)
+	context = {'list_of_events': list_of_events,'list_of_category': category}
 	return render(request, 'TimeTable/eventsList.html', context)
 
 def events(request):
 	list_of_category = Category.objects.all()
-	list_of_events = Event.objects.all()[:3]
+	today = datetime.date.today()
+	day = datetime.timedelta(days = 7)
+	yesterday = today + day
+	list_of_events = Event.objects.filter(date__range=["" + str(today), "" + str(yesterday)])[:3]
 	context = {'list_of_category': list_of_category, 'list_of_events': list_of_events}
 	return render(request, 'TimeTable/events.html', context)
 def eventDesc(request, event_id):

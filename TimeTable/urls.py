@@ -7,6 +7,7 @@ urlpatterns = [
     path('eventsList', eventsList, name='eventsList'),
     path('events', events, name='events'),
     path('eventDesc/<int:event_id>', eventDesc, name='eventDesc'),
+    path('eventsList/<int:category_id>', eventsList, name='eventsList'),
     path('authorization', authorization, name='authorization'),
     path('test', EventView.as_view()),
     path('order', OrderView.as_view()),

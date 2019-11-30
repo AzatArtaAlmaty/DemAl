@@ -17,7 +17,7 @@ class Event(models.Model):
 
 
 class Category(models.Model):
-    img = models.CharField(max_length=1000, null=True)
+    img = models.ImageField(upload_to='category', default=True)
     category_name = models.CharField(max_length=200)
     def __unicode__(self):
     	return self.category_name

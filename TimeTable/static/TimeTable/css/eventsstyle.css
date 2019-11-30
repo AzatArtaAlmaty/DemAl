@@ -34,12 +34,22 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
+.w-100 {
+    width: 100%!important;
+    height: 700px;
+}
+
 .intro_logo{
     font-family:'Courgette', cursive;  
     font-size: 30px;
     font-weight: 700;
     font-style:'Courgette', cursive; 
     color: #FFFFFF;
+}
+
+.intro_logo:hover{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .head{

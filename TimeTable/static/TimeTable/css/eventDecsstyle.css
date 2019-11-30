@@ -55,8 +55,13 @@ h6 {
     font-family:'Courgette', cursive;  
     font-size: 30px;
     font-weight: 700;
-    font-style:'Courgette', cursive; 
+    text-decoration: none;
     color: #FFFFFF;
+}
+
+.intro_logo:hover{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .head{

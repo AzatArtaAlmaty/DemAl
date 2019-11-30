@@ -19,7 +19,7 @@
                 <div class="header__inner">
                     <div class="">
                         <div class="row py-3">
-                            <p class="intro_logo">DemAl</p>
+                            <a class="intro_logo" href="/">DemAl</a>
                             <nav class="nav">
                             <a class="nav__link" href="#">EVENTS</a>
                             <a class="nav__link" href="#">ABOUT US</a>
@@ -46,7 +46,7 @@
         {% else %}
         <div class="carousel-item">
         {% endif %}
-        <img src="{{choice.img}}" class="d-block w-100" alt="...">
+        <img src="/media/{{choice.img}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ choice.events_name }}</h5>
           <p>{{choice.pub_date|date:"M d, Y"}}</p>
@@ -68,14 +68,14 @@
       {% for choice in list_of_category %}
       <div class= "events__card">
         <div align="center" class="events_pic"> 
-          <a href="#"><img style="width: 250px; height: 300px;" src="{{choice.img}}" >
+          <a href="#"><img style="width: 250px; height: 300px;" src="/media/{{choice.img}}" >
           <h2>{{choice.category_name}}</h2> 
           </a>
         </div>
       </div>
       {% endfor %}
     </div>
-	<footer class="foot">
+	<footer class="foot fixed-bottom">
   <div class="container-fluid">
     <div class="">
       <div class="row py-3">
